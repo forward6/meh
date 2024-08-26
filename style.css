@@ -1,0 +1,87 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Header Styles */
+header .logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Main Description Styles */
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+/* Subscribe Section Styles */
+.subscribe-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.platform-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.platform-button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s;
+}
+
+.platform-button img {
+  width: 100%;
+  height: 100%;
+}
+
+.platform-button:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #bbbbbb;
+}
+
+footer span {
+  color: #ffffff;
+  font-weight: 600;
+}
