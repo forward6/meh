@@ -6,9 +6,9 @@
 }
 
 body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a2e); /* A deep, space-like gradient */
+  color: #d0d0f0; /* Soft blue-gray text */
+  font-family: 'Orbitron', Arial, sans-serif; /* Retro-futuristic font */
   line-height: 1.6;
   display: flex;
   justify-content: center;
@@ -18,79 +18,88 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 850px;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 30px;
+  background: #10101a; /* Very dark blue background */
+  border-radius: 20px;
+  border: 2px solid #00ccff; /* Bright cyan-blue border */
+  box-shadow: 0 0 30px rgba(0, 204, 255, 0.5); /* Soft cyan glow for a high-tech feel */
 }
 
 /* Header Styles */
 header .logo {
-  max-width: 200px;
+  max-width: 160px;
   width: 100%;
   height: auto;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
+  filter: drop-shadow(0 0 20px #00ccff); /* Cyan glow around the logo */
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
   font-weight: 700;
+  color: #00ccff; /* Bright cyan-blue for a futuristic look */
+  text-shadow: 0 0 20px #00ccff, 0 0 30px #0099cc; /* Multiple layers of glow for depth */
 }
 
 /* Main Description Styles */
 .description {
-  font-size: 1.1rem;
-  margin-bottom: 40px;
-  padding: 0 10px;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  color: #d0d0f0; /* Light blue-gray for softer contrast */
+  text-shadow: 0 0 5px #000000; /* A subtle shadow for readability */
 }
 
 /* Subscribe Section Styles */
 .subscribe-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #00ccff; /* Matching the bright cyan-blue color scheme */
 }
 
 .platform-buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .platform-button {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  transition: transform 0.2s;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s, filter 0.3s;
 }
 
 .platform-button img {
   width: 100%;
   height: 100%;
+  filter: brightness(0) invert(1); /* Monochrome white icons for consistency */
 }
 
-.platform-button:hover {
-  transform: scale(1.1);
-}
-
-a {
-  color: #ffffff; /* Set the text color to white */
-  text-decoration: none; /* Remove the underline */
-}
-
-a:hover {
-  text-decoration: underline; /* Optional: Add underline on hover */
+.platform-button:hover img {
+  filter: brightness(1) saturate(1) hue-rotate(180deg) drop-shadow(0 0 10px #00ccff); /* Adds a cyan glow on hover */
+  transform: scale(1.15) rotate(-5deg); /* Slight tilt and zoom effect for interactivity */
 }
 
 /* Footer Styles */
 footer {
-  margin-top: 50px;
-  font-size: 0.9rem;
-  color: #bbbbbb;
+  margin-top: 60px;
+  font-size: 1rem;
+  color: #d0d0f0;
 }
 
-footer span {
-  color: #ffffff;
-  font-weight: 600;
+footer a {
+  color: #00ccff; /* Cyan-blue for the email link */
+  text-decoration: none;
+  transition: text-shadow 0.3s, color 0.3s;
+}
+
+footer a:hover {
+  text-shadow: 0 0 10px #00ccff, 0 0 20px #0099cc; /* Glowing effect on hover */
+  color: #0099cc; /* Slight color shift on hover */
 }
