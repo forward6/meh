@@ -74,6 +74,15 @@ header h1 {
   transform: scale(1.1);
 }
 
+a {
+  color: #ffffff; /* Set the text color to white */
+  text-decoration: none; /* Remove the underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
 /* Footer Styles */
 footer {
   margin-top: 50px;
