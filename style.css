@@ -103,3 +103,29 @@ footer a:hover {
   text-shadow: 0 0 10px #00ccff, 0 0 20px #0099cc; /* Glowing effect on hover */
   color: #0099cc; /* Slight color shift on hover */
 }
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem; /* Reduce the font size for smaller screens */
+    line-height: 1.2; /* Adjust line height for better readability */
+    word-break: break-word; /* Break the title into multiple lines if necessary */
+  }
+
+  .container {
+    padding: 30px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .description {
+    font-size: 1.1rem; /* Slightly smaller text for the description */
+    margin-bottom: 40px; /* Adjust margin for better spacing */
+  }
+
+  .subscribe-section p {
+    font-size: 1.2rem; /* Slightly smaller text for the subscription call-to-action */
+  }
+
+  .platform-buttons {
+    gap: 15px; /* Adjust the gap between buttons on mobile */
+  }
+}
