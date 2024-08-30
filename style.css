@@ -6,9 +6,9 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0a0a0a, #1a1a2e); /* A deep, space-like gradient */
-  color: #d0d0f0; /* Soft blue-gray text */
-  font-family: 'Orbitron', Arial, sans-serif; /* Retro-futuristic font */
+  background-color: #1b1b2f; /* Dark cosmic background */
+  color: #e0e0e0; /* Light gray text */
+  font-family: 'Roboto', sans-serif; /* Modern, clean font */
   line-height: 1.6;
   display: flex;
   justify-content: center;
@@ -18,47 +18,42 @@ body {
 }
 
 .container {
-  max-width: 850px;
-  text-align: center;
-  padding: 50px 30px;
-  background: #10101a; /* Very dark blue background */
-  border-radius: 20px;
-  border: 2px solid #00ccff; /* Bright cyan-blue border */
-  box-shadow: 0 0 30px rgba(0, 204, 255, 0.5); /* Soft cyan glow for a high-tech feel */
-}
-
-/* Header Styles */
-header .logo {
-  max-width: 160px;
+  max-width: 900px;
   width: 100%;
+  text-align: center;
+  background: #2a2a3d; /* Slightly lighter background for the content area */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Soft shadow for depth */
+  padding: 20px;
+}
+
+header .logo {
+  max-width: 100%;
   height: auto;
-  margin: 0 auto 25px;
-  filter: drop-shadow(0 0 20px #00ccff); /* Cyan glow around the logo */
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 40px;
-  font-weight: 700;
-  color: #00ccff; /* Bright cyan-blue for a futuristic look */
-  text-shadow: 0 0 20px #00ccff, 0 0 30px #0099cc; /* Multiple layers of glow for depth */
+.title {
+  font-size: 2.5rem;
+  color: #00ccff; /* Bright cyan for the title */
+  margin-bottom: 20px;
 }
 
-/* Main Description Styles */
 .description {
-  font-size: 1.3rem;
-  margin-bottom: 50px;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
   padding: 0 20px;
-  color: #d0d0f0; /* Light blue-gray for softer contrast */
-  text-shadow: 0 0 5px #000000; /* A subtle shadow for readability */
 }
 
-/* Subscribe Section Styles */
-.subscribe-section p {
-  font-size: 1.4rem;
-  margin-bottom: 25px;
-  font-weight: 600;
-  color: #00ccff; /* Matching the bright cyan-blue color scheme */
+.subscribe {
+  margin-bottom: 40px;
+}
+
+.subscribe h2 {
+  font-size: 1.5rem;
+  color: #00ccff;
+  margin-bottom: 20px;
 }
 
 .platform-buttons {
@@ -70,62 +65,67 @@ header h1 {
 
 .platform-button {
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   transition: transform 0.3s, filter 0.3s;
 }
 
 .platform-button img {
   width: 100%;
   height: 100%;
-  filter: brightness(0) invert(1); /* Monochrome white icons for consistency */
+  filter: brightness(0) invert(1); /* Inverts colors for a clean, white look */
 }
 
 .platform-button:hover img {
-  filter: brightness(1) saturate(1) hue-rotate(180deg) drop-shadow(0 0 10px #00ccff); /* Adds a cyan glow on hover */
-  transform: scale(1.15) rotate(-5deg); /* Slight tilt and zoom effect for interactivity */
+  filter: brightness(1) saturate(2) drop-shadow(0 0 10px #00ccff); /* Adds a cyan glow on hover */
+  transform: scale(1.15); /* Slightly enlarges icon on hover */
 }
 
-/* Footer Styles */
 footer {
-  margin-top: 60px;
+  margin-top: 20px;
   font-size: 1rem;
-  color: #d0d0f0;
+  color: #c0c0ff;
 }
 
-footer a {
-  color: #00ccff; /* Cyan-blue for the email link */
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: #00ccff;
   text-decoration: none;
-  transition: text-shadow 0.3s, color 0.3s;
+  margin: 0 10px;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
-footer a:hover {
-  text-shadow: 0 0 10px #00ccff, 0 0 20px #0099cc; /* Glowing effect on hover */
-  color: #0099cc; /* Slight color shift on hover */
+footer .social-links a:hover {
+  color: #0099cc;
+  text-shadow: 0 0 5px #00ccff;
 }
 
-/* Mobile Styles */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8rem; /* Reduce the font size for smaller screens */
-    line-height: 1.2; /* Adjust line height for better readability */
-    word-break: break-word; /* Break the title into multiple lines if necessary */
-  }
-
-  .container {
-    padding: 30px 20px; /* Adjust padding for smaller screens */
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
   }
 
   .description {
-    font-size: 1.1rem; /* Slightly smaller text for the description */
-    margin-bottom: 40px; /* Adjust margin for better spacing */
+    font-size: 1rem;
+    margin-bottom: 30px;
   }
 
-  .subscribe-section p {
-    font-size: 1.2rem; /* Slightly smaller text for the subscription call-to-action */
+  .platform-button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.7rem;
   }
 
-  .platform-buttons {
-    gap: 15px; /* Adjust the gap between buttons on mobile */
+  .description {
+    font-size: 0.9rem;
   }
 }
