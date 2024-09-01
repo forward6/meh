@@ -73,7 +73,7 @@ header .logo {
 .platform-button img {
   width: 100%;
   height: 100%;
-  filter: brightness(0) invert(1); /* Inverts colors for a clean, white look */
+  filter: ; /* Inverts colors for a clean, white look */
 }
 
 .platform-button:hover img {
