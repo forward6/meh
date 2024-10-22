@@ -151,6 +151,23 @@
             box-shadow: 0 0 20px rgba(0, 204, 255, 0.1);
         }
 
+        .nav-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-divider {
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(0, 204, 255, 0.3),
+                transparent
+            );
+            margin: 5px 0;
+        }
+
         .nav-button {
             position: relative;
             width: 50px;
@@ -174,10 +191,21 @@
             box-shadow: 0 0 15px rgba(0, 204, 255, 0.3);
         }
 
+        .nav-button.social {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
         .nav-button svg {
             width: 24px;
             height: 24px;
             transition: all 0.3s ease;
+        }
+
+        .nav-button.social svg {
+            width: 20px;
+            height: 20px;
         }
 
         .nav-tooltip {
@@ -226,12 +254,33 @@
                 justify-content: center;
                 border-radius: 15px 15px 0 0;
                 padding: 10px;
+            }
+
+            .nav-section {
+                flex-direction: row;
                 gap: 20px;
+            }
+
+            .nav-divider {
+                width: 1px;
+                height: 40px;
+                margin: 0 10px;
+                background: linear-gradient(
+                    180deg,
+                    transparent,
+                    rgba(0, 204, 255, 0.3),
+                    transparent
+                );
             }
 
             .nav-button {
                 width: 45px;
                 height: 45px;
+            }
+
+            .nav-button.social {
+                width: 35px;
+                height: 35px;
             }
 
             .nav-tooltip {
