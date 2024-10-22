@@ -7,6 +7,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+
+        /* Additional Blog-specific styles */
+        .nav-link {
+            color: #00ccff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #0099cc;
+            text-shadow: 0 0 5px #00ccff;
+        }
+
+        /* Modified logo size */
+        header .logo {
+            max-width: 25%; /* Reduced to 25% of original size */
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .blog-posts {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .blog-post {
+            background: rgba(42, 42, 61, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #3d3d5c;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 204, 255, 0.2);
+        }
+
+        .blog-post h2 {
+            color: #00ccff;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .blog-post-meta {
+            color: #8888aa;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .blog-post-excerpt {
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: #00ccff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .read-more:hover {
+            color: #0099cc;
+            text-shadow: 0 0 3px #00ccff;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post h2 {
+                font-size: 1.5rem;
+            }
+
+            header .logo {
+                max-width: 40%; /* Slightly larger on mobile for better visibility */
+            }
+        }
+
         .nav-links {
             display: flex;
             justify-content: center;
