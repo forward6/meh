@@ -86,12 +86,138 @@
                 max-width: 40%; /* Slightly larger on mobile for better visibility */
             }
         }
+
+        .floating-nav {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: rgba(27, 27, 47, 0.8);
+            padding: 15px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 204, 255, 0.2);
+            box-shadow: 0 0 20px rgba(0, 204, 255, 0.1);
+        }
+
+        .nav-button {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            border: 2px solid rgba(0, 204, 255, 0.3);
+            background: rgba(0, 204, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00ccff;
+            text-decoration: none;
+        }
+
+        .nav-button:hover {
+            background: rgba(0, 204, 255, 0.2);
+            border-color: rgba(0, 204, 255, 0.8);
+            transform: translateX(5px);
+            box-shadow: 0 0 15px rgba(0, 204, 255, 0.3);
+        }
+
+        .nav-button svg {
+            width: 24px;
+            height: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-tooltip {
+            position: absolute;
+            left: 70px;
+            background: rgba(27, 27, 47, 0.95);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-10px);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 204, 255, 0.2);
+        }
+
+        .nav-button:hover .nav-tooltip {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+        /* Glowing animation */
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(0, 204, 255, 0.3); }
+            50% { box-shadow: 0 0 15px rgba(0, 204, 255, 0.5); }
+            100% { box-shadow: 0 0 5px rgba(0, 204, 255, 0.3); }
+        }
+
+        .nav-button:active {
+            transform: translateX(2px);
+            animation: glow 0.5s ease-in-out;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .floating-nav {
+                position: fixed;
+                left: 0;
+                top: auto;
+                bottom: 0;
+                transform: none;
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+                border-radius: 15px 15px 0 0;
+                padding: 10px;
+                gap: 20px;
+            }
+
+            .nav-button {
+                width: 45px;
+                height: 45px;
+            }
+
+            .nav-tooltip {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%) translateY(-10px);
+                top: -40px;
+                bottom: auto;
+            }
+
+            .nav-button:hover {
+                transform: translateY(-5px);
+            }
+
+            .nav-button:hover .nav-tooltip {
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="index.html" class="nav-link">← Back to Home</a>
+            <nav class="floating-nav">
+                <a href="index.html" class="nav-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    <span class="nav-tooltip">Return Home</span>
+                </a>
+            </nav>
             <img src="https://pbcdn1.podbean.com/imglogo/image-logo/19294078/The_Multiverse_Employee_Handbook_-_Logo_i549ra.jpeg?v=693c47" alt="The Multiverse Employee Handbook Logo" class="logo">
             <h1 class="title">The Multiversal Memo</h1>
         </header>
