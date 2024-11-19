@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essential Guidelines for Paradox-Free File Deletions.">
+    <title>USER GUIDE: QUANTUM-SAFE RECYCLING BIN v2.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?r=1">
+    <style>
+
+        header .logo {
+            max-width: 25%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .article-meta {
+            color: #8888aa;
+            font-size: 0.9rem;
+            margin: 20px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #3d3d5c;
+        }
+
+        .article-content {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5em;
+            line-height: 1.8;
+        }
+
+        .article-content h2 {
+            color: #00ccff;
+            margin: 1.5em 0 0.8em;
+            font-size: 1.5rem;
+        }
+
+        .warning-box {
+            background: rgba(255, 99, 71, 0.1);
+            border: 1px solid rgba(255, 99, 71, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .quote-box {
+            background: rgba(42, 42, 61, 0.7);
+            border-left: 4px solid #00ccff;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .related-posts {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #3d3d5c;
+        }
+
+        .related-posts h3 {
+            color: #00ccff;
+            margin-bottom: 15px;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-posts li {
+            margin-bottom: 10px;
+        }
+
+        .related-posts a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .related-posts a:hover {
+            color: #00ccff;
+        }
+
+        @media (max-width: 768px) {
+            header .logo {
+                max-width: 40%;
+            }
+
+            .article-content {
+                padding: 15px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .nav-separator {
+                display: none;
+            }
+        }
+
+    </style>
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '1096863');
+    </script>
+    <!-- End MailerLite Universal -->
+</head>
+<body>
+    <div class="container">
+      <header>
+        <nav class="floating-nav">
+            <div class="nav-section">
+                <a href="index.html" class="nav-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    <span class="nav-tooltip">Return Home</span>
+                </a>
+                <a href="blog.html" class="nav-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                        <path d="M8 7h6"/>
+                        <path d="M8 11h8"/>
+                        <path d="M8 15h6"/>
+                    </svg>
+                    <span class="nav-tooltip">Visit Blog</span>
+                </a>
+            </div>
+
+            <div class="nav-divider"></div>
+
+            <div class="nav-section">
+                <a href="https://x.com/TMEHpodcast" target="_blank" class="nav-button social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                    </svg>
+                    <span class="nav-tooltip">Follow on X</span>
+                </a>
+                <a href="https://www.instagram.com/themultiverseemployeehandbook" target="_blank" class="nav-button social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                    </svg>
+                    <span class="nav-tooltip">Follow on Instagram</span>
+                </a>
+                <a href="https://reddit.com/r/TMEHpodcast/" target="_blank" class="nav-button social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M16 13a2 2 0 0 1 0 2c-.5.5-1.5 1-4 1s-3.5-.5-4-1a2 2 0 0 1 0-2m8-2a22 22 0 0 0-4-1 22 22 0 0 0-4 1m8 2c0-1.105-.889-1.997-1.99-2h.01a22 22 0 0 0-4-1 22 22 0 0 0-4 1h.01C4.89 11.003 4 11.895 4 13c0 1.105.889 1.997 1.99 2h.01c.5.5 1.5 1 4 1s3.5-.5 4-1h.01c1.101-.003 1.99-.895 1.99-2z"/>
+                    </svg>
+                    <span class="nav-tooltip">Join on Reddit</span>
+                </a>
+                <a href="mailto:&#112;&#111;&#100;&#99;&#97;&#115;&#116;&#64;&#109;&#117;&#108;&#116;&#105;&#118;&#101;&#114;&#115;&#101;&#101;&#109;&#112;&#108;&#111;&#121;&#101;&#101;&#104;&#97;&#110;&#100;&#98;&#111;&#111;&#107;&#46;&#99;&#111;&#109;" class="nav-button social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2"/>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    <span class="nav-tooltip">Contact Us</span>
+                </a>
+            </div>
+        </nav>
+        <img src="https://pbcdn1.podbean.com/imglogo/image-logo/19294078/The_Multiverse_Employee_Handbook_-_Logo_i549ra.jpeg?v=693c47" alt="The Multiverse Employee Handbook Logo" class="logo">
+      </header>
+
+        <main class="article-content">
+            <h1 class="title">Essential Guidelines for Paradox-Free File Deletion</h1>
+
+            <div class="article-meta">
+                Posted on November 19, 2024 (Post-Singularity Timeline)<br>
+                Filed under: Technical Maintenance, Network Infrastructure, Equipment Updates
+            </div>
+
+            <div class="warning-box">
+                NOTICE: Following last week's incident where [REDACTED] attempted to permanently delete their embarrassing emails and accidentally created a digital black hole that consumed three departments and the entire back catalog of cat videos, IT has implemented new safety protocols for file deletion.
+            </div>
+
+            <h2>SECTION 1: INTRODUCTION TO YOUR NEW QUANTUM-SAFE RECYCLING BIN</h2>
+
+            <div class="memo-section">
+                <p>The Quantum-Safe Recycling Bin (QSRB) v2.0 represents the latest in paradox-prevention technology, featuring:</p>
+                <ul>
+                    <li>Hawking radiation monitoring system</li>
+                    <li>Event horizon containment field</li>
+                    <li>Automated quantum state verification</li>
+                    <li>Built-in existential crisis management</li>
+                    <li>Reality anchor tethering</li>
+                    <li>Schrödinger-certified deletion protocols</li>
+                </ul>
+            </div>
+
+            <div class="quote-box">
+                "It's like a regular recycling bin, but with a Ph.D. in theoretical physics." - IT Department
+            </div>
+
+            <h2>SECTION 2: BASIC OPERATIONS</h2>
+
+            <div class="memo-section">
+                <h3>2.1 To Delete a File:</h3>
+                <ol>
+                    <li>Right-click file</li>
+                    <li>Select "Delete to Quantum State"</li>
+                    <li>Acknowledge the uncertainty principle warning</li>
+                    <li>Complete Form QD-40 ("Intent to Delete Across Realities")</li>
+                    <li>Wait for quantum state verification</li>
+                    <li>Ignore any philosophical questions posed by the automated response system</li>
+                </ol>
+
+                <h3>2.2 DO NOT:</h3>
+                <ul class="danger-list">
+                    <li>Attempt to calculate both the location AND momentum of your deleted files</li>
+                    <li>Create temporal paradoxes by deleting files before you create them</li>
+                    <li>Use the QSRB to dispose of antimatter documents</li>
+                    <li>Engage the automated response system in debates about free will</li>
+                </ul>
+            </div>
+
+            <h2>SECTION 3: SAFETY FEATURES</h2>
+
+            <div class="memo-section">
+                <h3>3.1 Quantum State Indicators:</h3>
+                <table class="spec-table">
+                    <tr>
+                        <td>🟢 Green</td>
+                        <td>Safe for deletion</td>
+                    </tr>
+                    <tr>
+                        <td>🟡 Yellow</td>
+                        <td>File exists in quantum superposition</td>
+                    </tr>
+                    <tr>
+                        <td>🔴 Red</td>
+                        <td>Imminent reality collapse</td>
+                    </tr>
+                    <tr>
+                        <td>⚫ Black</td>
+                        <td>Too late. Run.</td>
+                    </tr>
+                </table>
+
+                <h3>3.2 Emergency Protocols:</h3>
+                <p>If your recycling bin begins forming an event horizon:</p>
+                <ol>
+                    <li>Do NOT look directly at the quantum void</li>
+                    <li>Maintain a safe distance of at least 3 parsecs</li>
+                    <li>Contact IT (preferably from another dimension)</li>
+                    <li>Begin filing liability waivers across all affected realities</li>
+                </ol>
+            </div>
+
+            <div class="warning-box">
+                REMINDER: "The quantum void ate my homework" is only a valid excuse if you can provide documentation from at least three alternate realities.
+            </div>
+
+            <h2>SECTION 4: COMMON ISSUES & TROUBLESHOOTING</h2>
+
+            <div class="memo-section">
+                <h3>4.1 Known Issues:</h3>
+                <ul>
+                    <li>Files occasionally achieve sentience before deletion</li>
+                    <li>Recycling bin sometimes exchanges contents with parallel universes</li>
+                    <li>Deleted cat videos may spontaneously reconstruct themselves</li>
+                    <li>Quantum uncertainty may cause files to exist and not exist simultaneously</li>
+                    <li>Empty bin function occasionally creates temporary wormholes</li>
+                </ul>
+
+                <h3>4.2 Error Messages:</h3>
+                <table class="error-table">
+                    <tr>
+                        <td>ERR_QUANTUM_001:</td>
+                        <td>"File deletion violates laws of physics"</td>
+                    </tr>
+                    <tr>
+                        <td>ERR_QUANTUM_002:</td>
+                        <td>"Reality buffer overflow"</td>
+                    </tr>
+                    <tr>
+                        <td>ERR_QUANTUM_003:</td>
+                        <td>"File exists in too many/few dimensions"</td>
+                    </tr>
+                    <tr>
+                        <td>ERR_QUANTUM_404:</td>
+                        <td>"Universe not found"</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>SECTION 5: ADVANCED FEATURES</h2>
+
+            <div class="memo-section">
+                <h3>5.1 Quantum Deletion Options:</h3>
+                <ul>
+                    <li>Standard Delete (files remain in quantum superposition)</li>
+                    <li>Parallel Processing (delete across multiple realities)</li>
+                    <li>Temporal Shredding (erases file from timeline)</li>
+                    <li>Existential Elimination (file questions its own existence before deletion)</li>
+                </ul>
+
+                <div class="warning-box">
+                    NOTE: Temporal Shredding requires approval from Past and Future HR.
+                </div>
+            </div>
+
+            <h2>APPENDIX A: COMPATIBILITY NOTES</h2>
+
+            <div class="memo-section">
+                <p>The QSRB v2.0 is compatible with:</p>
+                <ul>
+                    <li>All standard reality configurations</li>
+                    <li>Most parallel universes (except Universe X-742)</li>
+                    <li>Non-Euclidean file systems</li>
+                    <li>Quantum computers (both on and off simultaneously)</li>
+                    <li>The newly sentient automated response system (as long as you're polite)</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                FINAL NOTE: If you're reading this guide in Universe X-742, please disregard all references to digital black holes and replace them with "quantum cheese voids." We still don't talk about what happened in that universe.
+            </div>
+
+            <div class="signing-authority">
+                <p>This guide has been approved by:</p>
+                <ul>
+                    <li>The IT Department (all quantum states)</li>
+                    <li>The Department of Temporal Operations</li>
+                    <li>Several versions of you who already successfully deleted files</li>
+                    <li>The Automated Response System (after much philosophical debate)</li>
+                </ul>
+            </div>
+
+            <div class="related-posts">
+                <h3>Related Notices and Updates</h3>
+                <ul>
+                    <li><a href="quantum-coffee-machine-incident.html">The Quantum Coffee Machine Incident</a></li>
+                    <li><a href="temporal-pto-requests.html">Updated Policy: Temporal PTO Requests</a></li>
+                    <li><a href="interdimensional-file-formats.html">Guide to Interdimensional File Formats</a></li>
+                </ul>
+            </div>
+            <p>&nbsp;</p>
+            <section class="subscribe">
+              <div class="platform-buttons">
+              <a href="https://podcasts.apple.com/us/podcast/the-multiverse-employee-handbook/id1764134739" target="_blank" class="platform-button">
+                <img src="https://img.icons8.com/?size=50&id=87745&format=png&color=ffffff" alt="Apple Podcasts">
+              </a>
+              <a href="https://open.spotify.com/show/2JxWJWRUjmDjoCje1JbcWZ" target="_blank" class="platform-button">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/spotify.png" alt="Spotify">
+              </a>
+              <a href="https://www.youtube.com/playlist?list=PLCK79HTuWuA409l7x6iRN_icn0xZFzamp" target="_blank" class="platform-button">
+                <img src="https://mcdn.podbean.com/mf/web/zd3gsu7g3bay5a22/youtube.png" alt="YouTube">
+              </a>
+              <a href="https://multiverseemployeehandbook.podbean.com/" target="_blank" class="platform-button">
+                <img src="https://mcdn.podbean.com/mf/web/3ki4fsm2deaycsx9/podbean-app-2.png" alt="Podbean">
+              </a>
+              <a href="https://overcast.fm/itunes1764134739" target="_blank" class="platform-button">
+                <img src="https://mcdn.podbean.com/mf/web/6qj8qeshjq7qh77s/Overcast_podcast_app_logo-1svg9don2.png" alt="Overcast">
+              </a>
+              </div>
+            </section>
+
+            <div class="ml-embedded" data-form="8gQUst"></div>
+        </main>
+
+        <footer>
+            Created by Robb Corrigan | © 2024
+        </footer>
+    </div>
+</body>
+</html>
