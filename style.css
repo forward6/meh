@@ -236,7 +236,7 @@ footer .contact a {
 
     .nav-section {
         flex-direction: row;
-        gap: 10px;
+        gap: 5px;
     }
 
     .nav-divider {
