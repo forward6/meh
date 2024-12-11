@@ -350,7 +350,15 @@ h1 {
     .nav-links {
         display: none;
     }
-
+    .newsletter h2 {
+        font-size: 1.1rem;
+        background: rgba(0, 0, 0, 1);
+        padding: 2rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        margin: 4rem 0;
+        backdrop-filter: blur(10px);
+    }
     .newsletter-form {
         display: flex;
         flex-direction: column;
