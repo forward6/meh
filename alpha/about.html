@@ -67,7 +67,7 @@
     background: rgba(30, 41, 59, 0.3);
     padding: 3rem;
     border-radius: 0.5rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
 }
 
 .cta-section h2 {
@@ -121,6 +121,40 @@
     border-radius: 0.5rem;
     backdrop-filter: blur(1px);
 }
+
+/* Hero Section Text */
+.hero-heading {
+    font-size: 3rem; /* Large text size for prominence */
+    font-weight: 700; /* Bold font weight */
+    text-align: center;
+    color: #ffffff; /* White text for contrast */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(100, 181, 246, 0.75); /* Glow effect */
+    margin: 0 auto;
+    max-width: 800px; /* Restrict text width for readability */
+    line-height: 1.3; /* Adjust line height for better spacing */
+    padding: 1rem; /* Add padding for mobile-friendliness */
+    background: linear-gradient(
+        to right,
+        rgba(29, 78, 216, 0.75),
+        rgba(126, 34, 206, 0.75)
+    ); /* Cosmic gradient */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text fill transparent */
+}
+
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 2.5rem; /* Slightly smaller font size for smaller screens */
+        padding: 0.5rem; /* Adjust padding for smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 2rem; /* Reduce font size for mobile screens */
+    }
+}
+
   </style>
       <script>
     <!-- MailerLite Universal -->
@@ -168,7 +202,7 @@
             </div>
 
             <div class="about-card">
-                <h2>The Idea</h2>
+                <h2>What Makes Our Podcast Unique</h2>
                 <p>Created by Robb Corrigan, The Multiverse Employee Handbook emerged from a simple question: "What if understanding quantum physics was as straightforward as navigating office politics?" (Spoiler alert: neither is straightforward, but both are fascinating.)</p>
             </div>
 
@@ -195,7 +229,7 @@
         </section>
 
             <div class="about-card">
-                <h2>Why Listen?</h2>
+                <h2>Why You Should Listen to The Multiverse Employee Handbook</h2>
               <p>Because in an infinite multiverse of podcasts, you've somehow quantum tunneled your way to the one that treats your existential work crisis as the cosmic joke it truly is.</p><br/>
               <p>Remember: In the grand corporate multiverse, we're all just trying to file our TPS reports before the heat death of the universe.</p><br/>                   <p>Don't panic, and always keep your quantum stapler charged!</p><br/>
                   <p><i>Note: Management is not responsible for any temporal paradoxes, quantum entanglements, or existential crises that may result from listening to this podcast. Please consult your interdimensional physician before attempting any non-Euclidean workplace maneuvers.</i></p><br/>
